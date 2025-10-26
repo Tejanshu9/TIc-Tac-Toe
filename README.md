@@ -69,5 +69,17 @@ A simple, interactive Tic Tac Toe game built using HTML, CSS, and JavaScript.
 - The status display is fixed at the top for clarity
 
 ---
+## 🚀 Getting Started
 
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/tic-tac-toe.git
+cd tic-tac-toe
+Open the Game
+Open the index.html file in your browser to play the game
+```
+## 🔗 Live Demo
+
+Check out the game in action: [Live Tic Tac Toe Demo](https://your-demo-link.com)
 
