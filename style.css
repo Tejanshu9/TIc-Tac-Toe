@@ -1,0 +1,142 @@
+/* Status display fixed at top like a game screen */
+/* Status display fixed at top like a game screen */
+#status {
+    position: fixed;         
+    top: 20px;               
+    left: 50%;               
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;             /* White text */
+    text-shadow: none;          /* Remove neon glow */
+    min-height: 40px;
+    width: 400px;               /* Fixed width for screen look */
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #000000;        /* Black background */
+    box-shadow: 0 0 5px #000 inset;  /* Subtle inner shadow for screen depth */
+    z-index: 1000;
+}
+
+
+/* Player name container */
+.player-name-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin: 80px 0 20px 0; /* Push below fixed status */
+    padding: 0 20px;
+    z-index: 900;
+}
+
+/* Player inputs */
+.player-name-container input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #00fff7;
+    background: #111;
+    color: #00ffea;
+    outline: none;
+    width: 180px;
+    text-align: center;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-name-container input:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 12px #ff00ff, 0 0 25px #ff00ff inset;
+}
+
+/* Play button */
+.play-button {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #28a745;
+    color: #111;
+    box-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7 inset;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.play-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffea, 0 0 50px #00ffea inset;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    margin-top: 140px; /* Push entire container below fixed status and inputs */
+}
+
+/* Board styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #111;
+    box-shadow: 0 0 20px #00ffe0 inset;
+}
+
+/* Cells */
+.board div {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #0ff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.board div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00fff7 inset;
+}
+
+/* Winning cell */
+.board div.winner {
+    color: #ff69b4;
+    box-shadow: 0 0 15px #ff69b4 inset;
+}
+
+/* Restart button */
+.restart {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #007bff;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.restart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #007bff inset;
+}
