@@ -81,5 +81,5 @@ Open the index.html file in your browser to play the game
 ```
 ## 🔗 Live Demo
 
-Check out the game in action: [Live Tic Tac Toe Demo]([https://your-demo-link.com](https://tejanshu9.github.io/Tic-Tac-Toe/))
+Check out the game in action: [Live Tic Tac Toe Demo](https://your-demo-link.com](https://tejanshu9.github.io/Tic-Tac-Toe/))
 
