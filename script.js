@@ -105,7 +105,7 @@ function GameController (
             showMessage("Game over.Please restart");
             return;
         }
-        showMessage(`${getActivePlayer().name}'s  ${getActivePlayer().symbol} into cell row:- ${row}, colomn:- ${column}`);
+        
     
         const success = board.setPosition(row, column, getActivePlayer().symbol);
         if(!success) return;
